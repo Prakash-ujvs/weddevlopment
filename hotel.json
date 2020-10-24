@@ -1,0 +1,21 @@
+
+[
+    {
+        "name": "Arya",
+        "city": "Mpl",
+        "type": "Vegetarian",
+        "cuisine": ["Indian", "chinese"]
+    },
+    {
+        "name": "Kalyani",
+        "city": "Mysore",
+        "type": "Vegetarian",
+        "cuisine": ["Indian"]
+    },
+    {
+        "name": "Nova yoga",
+        "city": "bangalore",
+        "type": "Vegetarian",
+        "cuisine": ["Indian"]
+    }
+]

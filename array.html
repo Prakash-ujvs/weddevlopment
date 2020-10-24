@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Page</title>
+    <style>
+        div{
+        text-align: center;
+        background-color: rgb(174, 222, 135);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 80;
+        font-style: italic;
+         }
+        h3{
+        color: rgb(105, 158, 255);
+        text-align: center;
+         }
+        body{
+        background-color: rgb(255, 47, 193);
+        text-align: center;
+        padding: 15px;
+        font-size: 150%;
+        font-style: italic;
+         
+         }
+    </style>
+    <script>
+        let store=[0,1,2];
+       let ddfunc=()=>{
+            var x = document.getElementById("myList").value;
+            if(x== store[0])
+            {
+                var Laptops = ['SAMSUNG','HP','DELL','ASUS'];
+                document.getElementById("printlist").innerHTML = Laptops.join("<br>");
+            }
+
+             if(x == store[1])
+            {
+                var Mobiles = ['SAMSUNG','GOOGLE PIXEL', 'LG', 'ASUS','iPHONE'];
+                document.getElementById("printlist").innerHTML = Mobiles.join("<br>");
+            }
+
+            else if(x == store[2])
+            {
+                var TVs = ['PANASONIC','SAMSUNG','LG','SONY'];
+                document.getElementById("printlist").innerHTML = TVs.join("<br>");
+            }
+        }
+
+    </script>
+</head>
+<body style="text-align:center">
+    <select id="myList" onchange="ddfunc()">
+        <option >----------select-----------</option>
+        <option value="0">Laptop</option>
+        <option value="1">Mobile</option>
+        <option value="2">TV</option>
+      </select> 
+      <p id="printlist"></p>
+</body>
+</html>
